@@ -1,0 +1,8 @@
+<h1 style="text-align:center"><b>Jugadores<small> De la Seleccion Peruana de Futbol</small></b></h1>
+<hr>
+
+<div class="card-group">
+
+  <app-heroe-tarjeta (heroeSeleccionado)="verHeroe( $event )" [heroe]="foo" [index]="i"  *ngFor="let foo of heroes; let i = index"></app-heroe-tarjeta>
+
+</div>
