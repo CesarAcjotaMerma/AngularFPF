@@ -1,32 +1,55 @@
+<style>
+  .navar{
+    font-size: 28px;
+  }
+  .navbar-brand{
+    margin-left: 40px;
+  }
+  .form-inline{
+    display: flex;
+    margin-left:auto; 
+    margin-right: 40px;
+  }
+  .form-inline input{
+    width: 400px;
+  }
+  .form-inline button{
+    margin-left: 10px;
+  }
+  .navbar-nav{
+    font-size: 20px;
+    font-weight: 700;
+  }
+</style>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-faded">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <a class="navbar-brand" href="#">
-    <img src="assets/img/A-64.png" width="60" height="60" alt="">
+    <img src="assets/img/logo.png" width="60" height="50" alt="">
   </a>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav">
 
       <!-- active -->
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['home']">Home</a>
+        <a class="nav-link" [routerLink]="['home']">Inicio</a>
       </li>
       <li class="nav-item" routerLinkActive="active">
         <a class="nav-link" [routerLink]="['heroes']">Jugadores</a>
       </li>
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['about']">About</a>
+        <a class="nav-link" [routerLink]="['about']">Acerca de</a>
       </li>
     </ul>
 
-
-    <form class="form-inline my-2 my-lg-2">
-      <input class="form-control ml-4" type="text" placeholder="Buscar héroe" (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
+    <form class="form-inline d-flex">
+      <input class="form-control me-2" type="text" placeholder="Buscar héroe" (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
       <button (click)="buscarHeroe(buscarTexto.value)"
-          class="btn btn-outline-primary my-4 my-sm-2" type="button">Buscar</button>
+          class="btn btn-outline-success" type="button">Buscar</button>
     </form>
 
   </div>
