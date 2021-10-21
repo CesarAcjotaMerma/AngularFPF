@@ -1,0 +1,11 @@
+.card-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 300px;
+    margin: 10px;
+}
+.card{
+    box-shadow: 5px 5px 5px #ccc;
+}

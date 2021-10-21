@@ -6,21 +6,21 @@ export class HeroesService {
 
   private heroes:Heroe[] = [
     {
-      nombre: "Paolo Guerrero",
+      nombre: "Gianluca Lapadula",
       bio: "Jugador de la seleccion Peruana de Futbol",
-      img: "assets/img/guerrero.png",
+      img: "assets/img/lapadula.png",
       posicion: "delantero",
       edad: 25,
       camiseta: 9,
-      aparicion: "1941-11-01",
-      casa:"DC"
+      aparicion: "1940-06-01",
+      casa: "DC"
     },
     {
       nombre: "Jefferson Farfán",
       bio: "Jugador de la seleccion Peruana de Futbol",
       img: "assets/img/farfan.jpg",
       posicion: "delantero",
-      edad: 25,
+      edad: 35,
       camiseta: 10,
       aparicion: "1939-05-01",
       casa:"DC"
@@ -40,20 +40,20 @@ export class HeroesService {
       bio: "Jugador de la seleccion Peruana de Futbol",
       img: "assets/img/peña.jpg",
       posicion: "volante",
-      edad: 25,
+      edad: 26,
       camiseta: 23,
       aparicion: "1962-05-01",
       casa:"Marvel"
     },
     {
-      nombre: "Gianluca Lapadula",
+      nombre: "Paolo Guerrero",
       bio: "Jugador de la seleccion Peruana de Futbol",
-      img: "assets/img/lapadula.png",
+      img: "assets/img/guerrero.png",
       posicion: "delantero",
-      edad: 25,
+      edad: 36,
       camiseta: 9,
-      aparicion: "1940-06-01",
-      casa: "DC"
+      aparicion: "1941-11-01",
+      casa:"DC"
     },
     {
       nombre: "Yoshimar Yotun",
@@ -111,10 +111,7 @@ export class HeroesService {
     return heroesArr;
 
   }
-
-
 }
-
 
 export interface Heroe{
   nombre: string;
